@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #0e0d0d98;
+}
+
+h1{
+    text-align: center;
+}
+
+#error_message{
+    width: 90%;
+    margin:auto;
+   
+}
+
+#aviso{
+    height: 80px;
+    margin-bottom: 1em;
+    font-size: 21px;
+    text-align: center;
+}
+
+.main-wraper {
+    width: 100%;   
+     margin: auto;
+    background-color: #0e0d0dd0;
+    color: #fff;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}  
+.container-section > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.row-left {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.row-left img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #4d4d4d;
+}
+.row-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.stats-user{
+    display: flex;
+    flex-direction: column;
+    
+}
+.stats-user span{
+    font-weight: 700;
+}
+.link-repos {
+    margin-bottom: 2%;
+    width: 90%;
+}
+.link-repos a{
+    margin-right: 10px;
+    background-color: #fbfdefd3;
+    padding: 1px 6px 5px;
+    border-radius: 4px;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    margin-bottom: 7px;
+    display: inline-block;
+    font-weight: 600;
+}
+.link-repos a:hover{
+    background-color: #3a3a3a;
+}
+.search-section {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 4%;
+    flex-wrap: wrap;
+}
+.search-section input{
+    width: 60%;
+    outline: none;
+    border: 0px solid;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid;
+    background-color: #ff000000;
+}
+.search-section a{
+    width: 200px;
+    
+    color: rgb(236, 236, 236);
+    background-color: rgba(148, 144, 144, 0.788);
+    padding: 10px 8px 13px;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.search-section a:hover{
+    background-color: #c9c9c9;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+.user{
+    background-color: rgba(200, 204, 204, 0.781);
+    color: rgb(0, 0, 0);
+    margin-top: 1.5em;
+    padding-bottom: 2.3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.company{
+    font-size: 17px;
+    text-align: center;
+
+}
+
+/* estilos para el switch */
+:root {
+    --bg: #110921;
+    --purple: #000000;
+    --green: #ffffff;
+    --font: 'Roboto Mono', sans-serif;
+  }
+  
+  .wrap-toggle {
+    padding-top: 5rem;
+    display: flex;
+    width: 90%;
+    padding-left: 12px;
+    
+    
+  }
+
+  #mode{
+    position: relative;
+    top: -3em;
+    margin-left: 6px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: var(--purple);
+    border-radius: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+    top:-3em;
+    
+  }
+  
+  .switch:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    top: 5px;
+    left: 5px;
+    transition: all 0.3s;
+  }
+  
+  input[type='checkbox']:checked + .switch:after {
+    transform: translateX(40px);
+    background-color: var(--bg);
+  }
+  
+  input[type='checkbox']:checked + .switch {
+    background-color: var(--green);
+  }
+  
+  .offscreen {
+    position: absolute;
+    left: -9999px;
+  }
+
+@media (min-width:680px){
+    .row-left {
+        width: 40%;
+        height: 18%;
+
+       
+    }
+
+    .row-left img{
+        width: 130px;
+        height: 130px;
+        margin-top: 12px;
+      
+    }
+
+    .user{
+        
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        flex-wrap: wrap;
+        
+    }
+
+    .row-right {
+        width: 90%;
+       margin: auto;
+       position: relative;
+       top: -1.7em;
+        
+        
+    
+    }
+
+    .stats-user{
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        
+    }
+}
